@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Asticassia/img/download.png">
+    <title>Asticassia</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img class="logo" src="/Asticassia/img/logo.png">
+            <h1>Asticassia</h1>
+            <h2>School of Technology</h2>
+        </a>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </header>
+   
+    <section class="banner">
+        <video class="trailer" src="/Asticassia/video/trailer1.mp4" autoplay loop muted></video>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY >0);
+        })
+    </script>
+    <section class="bg" id="Home">
+        <h1 class="title">WELCOME</h1>
+        <h2 class="sub">To Asticassia's School of Technology</h2>
+        <br>
+        <br>
+        <p class="desc">Here in Asticassia, We welcome all students to have an access
+        to <br> better education about our evolving technology and <br>
+        the Advance technology of Gundams and to also pilot and maintain them. </p>
+        <img class="model" src=>
+    </section>
+    
+    <section class="bg" id="about">
+        <h1 class="title">About Us</h1>
+        <br>
+        <p class="desc">Asticassia is a Higher-Education Facility run <br> by
+            the Benerit Group. It is made up of specialized piloting, mechanical <br>
+            and management strategy departments.</p>
+    </section> 
+
+    <section class="bg" id="courses">
+        <h1 class="title">These are the Courses offered here in <br>
+             Asticassia:</h1>
+        <h2 class="pilot">Pilot Courses:</h2>
+            <ul>
+                <Li>Aviation</Li>
+                <Li>Aeronautical Science</Li>
+                <Li>Aerospace Engineering</Li>
+                <Li>Aviation Management</Li>
+                <Li>Aeronautical Engineering</Li>
+            </ul>
+        <h2 class="mecha">Robotics Courses:</h2>
+            <br>
+            <br>
+
+            <ul>
+                <li>Electrical Engineering</li>
+                <li>Mechanical Engineering</li>
+                <li>AI Engineering</li>
+                <li>Robotics Engineering</li>
+                <li>Electronics & Communication Engineering</li>
+            </ul>
+    <div class="container">        
+        <h3>Interested in our School?</h3>
+            <a href="forms.html" class="btn">Click Here</a>
+        <h4> to join now!</h4>
+    </div>
+        </section>
+
+    <footer>
+        <h1>&copy;Asticassia 2023</h1>
+        <h4>All rights reserved</h4>
+        <h5>By: Marc Elfer M. Molon</h5>
+    </footer>
+
+</body>
+</html>

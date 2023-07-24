@@ -1,0 +1,491 @@
+@font-face {
+    font-family: Josefin ;
+    src: url(/Asticassia/fonts/JosefinSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Lora;
+    src: url(/Asticassia/fonts/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/Asticassia/fonts/Montserrat-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 200vh;
+    background-color: hsl(0, 0%, 90%);
+    overflow-x: hidden;
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    z-index: 100000;
+    background-color: hsl(243, 52%, 55%);
+    transition: 0.5s;
+    border-bottom: 5px solid;
+
+}
+header.sticky{
+    background: hsl(243, 100%, 72%);
+    transition: 0.5s;
+}
+header .logo{
+    float: right;
+    height: 150px;
+    padding: 0px;
+
+}
+header h1{
+    font-size: 40px;
+    position: absolute;
+    left: 150px;
+    bottom: 70px;
+    text-decoration: none;
+    color: black;
+    font-family: Lora;
+}
+header h2{
+    font-size: 30px;
+    position: absolute;
+    left: 149px;
+    bottom: 41px;
+    text-decoration: none;
+    color: black;
+    font-family: Lora;    
+}   
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Lora;
+    top: 5px;
+    transition: 0.5s;
+}
+header ul li a:hover{
+    color: white;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Asticassia/img/bg.jpg);
+    background-size:cover;
+}
+header.sticky ul li a{
+    transition: 0.5s;
+    color: rgb(0, 0, 0); 
+}
+header.sticky ul li a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s
+}
+.trailer{
+    position: absolute;
+    width: 1500px;
+    height: 700px;
+    left: 200px;
+    top: 200px;
+}
+.bg{
+    width: 99.9%;
+    float:left;
+    height: 130vh;
+}
+#Home{
+    background-image: url(/Asticassia/img/home.jpg);
+}
+.title{
+    font-size: 70px;
+    position: relative;
+    top: 220px;
+    left: 70px;
+    font-family: Josefin;
+    color: hsl(0, 0%, 100%)
+}
+.sub{
+    position: relative;
+    font-size: 60px;
+    font-family: Montserrat;
+    top: 240px;
+    left: 70px;
+    color: hsl(0, 0%, 100%);
+}
+.desc{
+    position: relative;
+    font-size: 40px;
+    font-family: Montserrat;
+    color: hsl(0, 0%, 100%);
+    top: 300px;
+    left: 70px;
+}
+#about{
+    background-image: url(/Asticassia/img/about.jpg);
+}
+#courses{
+    background-image: url(/Asticassia/img/courses.jpg);
+}
+.pilot{
+    position: relative;
+    font-size: 35px;
+    font-family: Montserrat;
+    color: hsl(0, 0%, 100%);
+    top: 250px;
+    left: 200px;
+}
+#courses ul li{
+    position: relative;
+    font-size: 30px;
+    font-family: Montserrat;
+    top: 280px;
+    left: 200px;
+    margin-bottom: 20px;
+    list-style: none;
+    color: white;
+}
+.mecha{
+    position: relative;
+    font-size: 35px;
+    font-family: Montserrat;
+    color: hsl(0, 0%, 100%);
+    top: 290px;
+    left: 200px;
+}
+.container{
+    width: 400px;
+    height: 500px;
+    margin: 100px auto;
+    background-image: url(/Asticassia/img/div.jpg);
+    position: relative;
+    left: 400px;
+    bottom: 550px;
+    border-radius: 25% 10%;
+    box-shadow: 3px 3px 5px;
+}
+.container h3{
+    margin: 0;
+    padding: 0;
+    font-family: Lora;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+.container h4{
+    margin: 0;
+    padding: 0;
+    font-family: Lora;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.container .btn{
+    position: relative;
+    font-family: Montserrat;
+    top: 200px;
+    left: 110px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #f169fd;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+}
+.container .btn:hover, .btn:focus{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+footer{
+    overflow: hidden;
+    height: 200px;
+    width: 1862px;
+    display: flex;
+    padding: 10px;
+    border-top: 5px solid;
+    background-image: url(/Asticassia/img/footer.jpg);
+}
+
+footer h1{
+    position: relative;
+    left: 800px;
+    top: 50px;
+    font-size: 40px;
+    font-family: Josefin;
+    color: hsl(0, 0%, 100%);
+}
+footer h4{
+    position: relative;
+    left: 520px;
+    top: 100px;
+    font-size: 30px;
+    font-family:Josefin ;
+    color: white;
+}
+footer h5{
+    position: relative;
+    left: 270px;
+    top: 140px;
+    font-size: 20px;
+    font-family:Josefin ;
+    color: white;
+}
+.myinfo{
+    overflow: hidden;
+    overflow-y: hidden;
+}
+.info{
+    background-image: url(/Asticassia/img/info.jpg);
+    position: relative;
+    top: 155px;
+    width: 2000px;
+    height: 900px;
+    background-size: cover;
+}
+.img-container{
+    position: relative;
+    top: 10px;
+    left: 150px;
+    width: 400px;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10% 30% 50% 60%;
+    box-shadow: 3px 3px 5px;
+}
+.profile{
+    position: relative;
+    top: 100px;
+    left: 600px;
+    font-family: Josefin;
+    font-size: 70px;
+}
+.name{
+    position: relative;
+    bottom: 350px;
+    left: 600px;
+    font-family: Montserrat;
+    font-size: 50px;
+}
+p{
+    position: relative;
+    bottom: 300px;
+    left: 600px;
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 50px;
+}
+.media ul{
+    position: absolute;
+    top: 550px;
+    left: 670px;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.media ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+.media ul li .fab{
+    font-size: 35px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+.media ul li a:hover{
+    color: #FFF;
+}
+.media ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 black;
+    transition: .6s;
+}
+.media ul li:nth-child(1) a:hover{
+    background-color: rgb(104, 101, 255);
+}
+.media ul li:nth-child(2) a:hover{
+    background-color: rgb(255, 101, 204);
+}
+.myforms{
+    overflow: hidden;
+    overflow-y: hidden;
+}
+.forms{
+    background-image: url(/Asticassia/img/courses.jpg);
+    position: relative;
+    top: 155px;
+    width: 2000px;
+    height: 900px;
+    background-size: cover;
+}
+.enroll{
+    position: relative;
+    top: 100px;
+    width: 450px;
+    height: 600px;
+    margin: auto;
+    border-radius: 25px;
+    background-image: url(/Asticassia/img/div.jpg);
+    background-size: cover;
+    padding: 20px;
+    font-family: Montserrat;
+    font-size: 27px;
+}
+.enroll h4{
+    font-size: 25px;
+    font-family: Josefin;
+}
+input[type=text] , select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box ;
+    font-family: Josefin;
+    text-transform: uppercase;
+}
+input[type=number] , select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box ;
+    font-family: Josefin;
+    text-transform: uppercase;
+}
+input[type=date] , select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box ;
+    font-family: Josefin;
+    text-transform: uppercase;
+}
+.submit{
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 10px 60px;
+    background: purple;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    position: relative;
+    left: 100px;
+    font-family: Josefin;
+    top: 10px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.popup{
+    width: 400px;
+    background: #FFF;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #FFF;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+
+
+
+
+
+    

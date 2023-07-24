@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Asticassia/img/download.png">
+    <title>Asticassia</title>
+</head>
+<body class="myforms">
+    <header>
+        <a href="index.html" class="logo">
+            <img class="logo" src="/Asticassia/img/logo.png">
+            <h1>Asticassia</h1>
+            <h2>School of Technology</h2>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="#index.html">Courses</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </header>
+<main class="forms">
+ <form>
+    <div class="enroll">
+        <h4>Please Enter Your Information:</h4>
+        <br>
+            <label for="name">Name:</label>
+            <input type="text" name="fullname" placeholder="Name" minlength="required"><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" placeholder="Age" min="0" max="65" minlength="required"><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Email" minlength="required"><br>
+            <label for="bday">Birthday:</label>
+            <input type="date" minlength="required"><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender" value="male">Male
+            <input type="radio" name="Gender" value="female">Female<br<>         
+            <select id="course">
+                <option value="course">Select Course</option>
+                <option value="course">Aviation</option>
+                <option value="course">Aeronautical Science</option>
+                <option value="course">Aerospace Engineering</option>
+                <option value="course">Aviation Management</option>
+                <option value="course">Aeronautical Engineering</option>
+                <option value="course">Electrical Engineering</option>
+                <option value="course">Mechanical Engineering</option>
+                <option value="course">AI Engineering</option>
+                <option value="course">Robotics Engineering</option>
+                <option value="course">Electronics and Communication Engineering</option>
+            </select>
+        <div class="submit">
+            <button type="submit" class="btn" onclick="openPopup"><a href="index.html">SUBMIT</a></button>
+        </div>
+    </div>
+</form>
+            <div class="popup" id="popup">
+                <img src="/Asticassia/video/check.gif">
+                <h2>Thank You!</h2>
+                <p>Your info has been successfully submitted<br>
+                please wait for the confirmation email
+                </p>
+            <button type="button" onclick="closePopup()"><a href="index.html">Back to Home</a> </button>
+         </div> 
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
+    </script>
+</main>
+</body>
+</html>
