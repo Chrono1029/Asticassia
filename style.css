@@ -44,12 +44,12 @@ header.sticky{
 }
 header .logo{
     float: right;
-    height: 150px;
+    height: 20px;
     padding: 0px;
 
 }
 header h1{
-    font-size: 16px;
+    font-size: 20px;
     position: absolute;
     left: 150px;
     bottom: 70px;
@@ -58,7 +58,7 @@ header h1{
     font-family: Lora;
 }
 header h2{
-    font-size: 14px;
+    font-size: 18px;
     position: absolute;
     left: 149px;
     bottom: 41px;
@@ -83,7 +83,7 @@ header ul li a{
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: Lora;
